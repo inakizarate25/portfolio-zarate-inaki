@@ -1,0 +1,82 @@
+body {
+  background-color: #000000;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header img {
+  height: 50px;
+  width: 100px;
+}
+
+.general-I {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4.8fr 1fr;
+  grid-template-areas: "header" "section" "footer";
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+section {
+  display: grid;
+  place-items: center;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.presentacion .presentacion__id {
+  display: flex;
+  gap: 10px;
+}
+.presentacion .presentacion__id .presentacion__id--nombre {
+  font-size: 60px;
+  color: #00F0FF;
+}
+.presentacion .presentacion__id .presentacion__id--apellido {
+  font-size: 60px;
+  color: #fff;
+}
+
+.presentacion__info--2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer ul li a img {
+  height: 30px;
+  width: 30px;
+}
+
+.marca {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .presentacion__id--nombre {
+    font-size: 45px;
+  }
+  .presentacion__id--apellido {
+    font-size: 45px;
+  }
+  .presentacion__info--2 {
+    font-size: 20px;
+  }
+  footer ul li a img {
+    height: 18px;
+    width: 18px;
+  }
+  .marca {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
