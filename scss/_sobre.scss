@@ -1,3 +1,14 @@
+$color1: #000000;
+$color2:#fff;
+$color3: #00F0FF;
+body {
+    background-color: $color1;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
 .generalS {
     display: grid;
     grid-template-columns: auto;
@@ -48,7 +59,7 @@
                 
                 .info__span1--mi {
                     font-size: 100px;
-                    color: #00F0FF;
+                    color: $color3;
                 } 
             }
             .info__span2 {
@@ -56,7 +67,7 @@
                 gap: 10px;
                 .info__span2--soy {
                     font-size: 30px;
-                    color: #00F0FF;
+                    color: $color3;
                 }
                 
                 .info__span2--desarrollador {

@@ -1,4 +1,3 @@
-sass 
 body {
   background-color: #000000;
   font-family: "Fira Sans", sans-serif;
@@ -13,8 +12,6 @@ header img {
   width: 100px;
 }
 
-
-/* sobre mi */
 .general-I {
   display: grid;
   grid-template-columns: 1fr;
@@ -81,6 +78,15 @@ footer ul li a img {
     font-size: 12px;
   }
 }
+body {
+  background-color: #000000;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
 .generalS {
   display: grid;
   grid-template-columns: auto;
@@ -257,4 +263,4 @@ footer ul li a img {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */
