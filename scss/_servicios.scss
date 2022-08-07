@@ -1,0 +1,25 @@
+$color1: #000000;
+$color2:#fff;
+$color3: #00F0FF;
+.sectionS {
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.tituloS {
+    color: $color3;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+main {
+    color: $color1;
+}
