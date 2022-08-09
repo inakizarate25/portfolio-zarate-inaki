@@ -78,6 +78,17 @@ footer ul li a img {
     font-size: 12px;
   }
 }
+.navbar {
+  background-color: #000000;
+}
+
+.generalS {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas: "header" "section" "footer";
+}
+
 .container1 {
   display: grid;
   grid-template-areas: "informacion" "descripcion" "habilidades";
@@ -90,6 +101,82 @@ footer ul li a img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+.section-SM .container1 {
+  display: grid;
+  grid-template-areas: "informacion" "descripcion" "habilidades";
+  justify-items: center;
+  align-items: center;
+}
+.section-SM .container1 .informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+.section-SM .container1 .informacion .info__span1 {
+  display: flex;
+  gap: 10px;
+}
+.section-SM .container1 .informacion .info__span1 .info__span1--sobre {
+  font-size: 100px;
+}
+.section-SM .container1 .informacion .info__span1 .info__span1--mi {
+  font-size: 100px;
+  color: #00F0FF;
+}
+.section-SM .container1 .informacion .info__span2 {
+  display: flex;
+  gap: 10px;
+}
+.section-SM .container1 .informacion .info__span2 .info__span2--desarrollador, .section-SM .container1 .informacion .info__span2 .info__span2--soy {
+  font-size: 30px;
+}
+.section-SM .container1 .informacion .info__span2 .info__span2--soy {
+  color: #00F0FF;
+}
+.section-SM .container1 .descripcion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+  width: 1000px;
+}
+.section-SM .container1 .descripcion .descripcion__p {
+  height: 150px;
+  width: 250px;
+}
+.section-SM .container1 .descripcion .descripcion__video {
+  height: 315px;
+  width: 560px;
+}
+.section-SM .container1 .habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+}
+.section-SM .container1 .habilidades .habilidades__div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-SM .container1 .habilidades .habilidades__div .habilidades__div--html {
+  height: 300px;
+  width: 450px;
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.section-SM .container1 .habilidades .habilidades__div .habilidades__div--bootstrap {
+  height: 200px;
+  width: 260px;
+  display: grid;
+  justify-content: center;
   align-items: center;
 }
 
@@ -125,7 +212,7 @@ footer ul li a img {
   color: #00F0FF;
 }
 
-.info__span2--desarrollador {
+.info__span2--desarrollador, .section-SM .container1 .informacion .info__span2 .info__span2--soy {
   font-size: 30px;
 }
 
@@ -139,7 +226,7 @@ footer ul li a img {
   .info__span2--soy {
     font-size: 20px;
   }
-  .info__span2--desarrollador {
+  .info__span2--desarrollador, .section-SM .container1 .informacion .info__span2 .info__span2--soy {
     font-size: 20px;
   }
 }
@@ -156,7 +243,7 @@ footer ul li a img {
   .info__span2--soy {
     font-size: 15px;
   }
-  .info__span2--desarrollador {
+  .info__span2--desarrollador, .section-SM .container1 .informacion .info__span2 .info__span2--soy {
     font-size: 15px;
   }
 }
@@ -432,8 +519,8 @@ main {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
   width: 500px;
 }
 
@@ -493,8 +580,8 @@ h2 {
 .spanC {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .spanC p {

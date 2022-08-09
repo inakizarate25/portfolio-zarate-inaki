@@ -1,4 +1,6 @@
-
+.navbar {
+    background-color: $color1;
+}
 .generalS {
     display: grid;
     grid-template-columns: auto;
@@ -61,15 +63,16 @@ $color3: #00F0FF;
             .info__span2 {
                 display: flex;
                 gap: 10px;
-                .info__span2--soy {
-                    font-size: 30px;
-                    color: #00F0FF;
-                }
-                
                 .info__span2--desarrollador {
                     font-size: 30px;
                     
                 }
+                .info__span2--soy {
+                    @extend .info__span2--desarrollador;
+                    color: #00F0FF;
+                }
+                
+                
             }
 
         }

@@ -24,6 +24,16 @@ $color3: #00F0FF;
     padding: 50px;
 }
 
+
+$cards:(
+    fondo: #00F0FF,
+    altura: 310px,
+    ancho: 500px,
+    cFuente: #000000,
+    tFuente: 20px,
+);
+
+
 .container__card {
     display: flex;
     padding: 50px;
@@ -39,9 +49,9 @@ $color3: #00F0FF;
     position: relative;
     left: -50px;
     top: 115px;
-    background-color: $color3;
-    height: 310px;
-    width: 500px;
+    background-color: map-get($cards, fondo);
+    height: map-get($cards, altura);
+    width: map-get($cards, ancho);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -50,8 +60,8 @@ $color3: #00F0FF;
 
 }
 .container__card--div p {
-    color: #000000;
-    font-size: 20px;
+    color: map-get($cards, cFuente);
+    font-size: map-get($cards, tFuente);
    margin: 8px;
 }
 
