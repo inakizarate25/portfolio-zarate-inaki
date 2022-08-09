@@ -1,0 +1,8 @@
+agregue estas keywords:
+      inicio: portfolio, iñaki zarate, desarrollador web, front end.
+      sobre mi: bootsrap, sass, html, css, git, github.
+      portfolio:desarrolo web, landing page, e-comerce, web app.
+      servicios: pagina web, mantenimiento.
+      contacto: contacto, instagram, facebook, twitter.
+
+agregue esta descripcion en el index: Soy iñaki zarate, desarrollador front-end.
