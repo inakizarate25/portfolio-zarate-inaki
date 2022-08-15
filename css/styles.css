@@ -51,6 +51,17 @@ section {
   font-size: 20px;
 }
 
+.presentacion img {
+  height: 350px;
+  width: 350px;
+}
+
+@media screen and (max-width: 480px) {
+  .presentacion img {
+    height: 300px;
+    width: 300px;
+  }
+}
 footer ul li a img {
   height: 30px;
   width: 30px;

@@ -55,10 +55,22 @@ section {
             }
     }
 }
+
 .presentacion__info--2 {
     color: $color2;
     font-size: $titulo-sm;
 }    
+.presentacion img {
+    height: 350px;
+    width: 350px;
+}
+@media screen and (max-width:480px) {
+    .presentacion img {
+        height: 300px;
+        width: 300px;
+    }
+    
+}
     
 footer ul li a img {
     height: 30px;
