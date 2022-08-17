@@ -144,7 +144,7 @@ $color3: #00F0FF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+    gap: 30px;
 }
 
 .habilidades p {
@@ -152,60 +152,181 @@ $color3: #00F0FF;
     color: $color3;
 }
 
-.habilidades__div {
-    display: flex;
-    justify-content: space-around;
+// .habilidades__div {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: flex-start;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     gap: 50px;
+// }
+// .progreso {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     height: 80px;
+//     width: 360px;
+//     .titulo-progreso {
+//         font-size: 20px;
+//         color: $color2;
+//     }
+//     .barra {
+//         height: 60px;
+//         width: 360px;
+//         background-color: #161616;
+//         border-radius: 8px;
+//         p {
+//             color: $color1;
+//             font-size: 18px;
+//         }
+//     }
+// }
+
+// .html {
+//     height:40px ;
+//     width: 95%;
+//     background-color: $color3;
+//     border-radius: 8px;
+// }
+
+#skills{
+    width: 100%;
+    height:auto;
+    margin-top: 110px;
+}
+.skills-header{
+    height: auto;
+    width: 100%;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: $color3;
+    padding:10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-weight: 900;
 }
-
-.habilidades__div--html {
-    height: 300px;
-    width: 450px;
+.skills-content{
+    height: auto;
+    width:100%;
     margin-top: 20px;
-   display: grid;
-   justify-content: center;
-   align-items: center;
+    margin-bottom: 80px;
+    text-align: center;
 }
-.habilidades__div--bootstrap {
-    height: 200px;
-    width: 260px;
-    display: grid;
-   justify-content: center;
-   align-items: center;
+.skill-html{
+    height: auto;
+    width: 600px;
+    padding: 0%;
+    position: relative;
+    color: $color2;
+    font-weight: bold;
+    display: inline-block;
+    padding:1.5%;
 }
-
-
-@media screen and (max-width:768px) {
-    .habilidades {
-        margin-top: 150px;
+@media screen and (max-width:615px){
+    .skill-html {
+        width: 80%;
     }
     
-    .habilidades p {
-        font-size: 40px;
-        
-    }
-    .habilidades__div {
-        flex-direction: column;
-    }
-    
-    
-
 }
-@media screen and (max-width:480px) {
-    .habilidades {
-        margin-top: 150px;
-    }
-    
-    .habilidades p {
-        font-size: 30px;
-        
-    }
-    
-    
-    
-    .habilidades__div--html {
-        height: 250px;
-        width: 430px;
-    }
-    
+.skill-text{
+    width:80%;
+    position: relative;
+    height: 50px;
+}
+.html{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    top:30%;
+}
+.html-prog{
+   width:100%;
+   height:40px;
+   border-radius: 10px;
+   background: #191919;
+   box-shadow:0px 0px 25px rgb(0,0,0,.1);
+   position: relative;
+   overflow: hidden;
+   color: $color1;
+}
+.html-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    width:95%;
+    border-radius: 10px;
+    background: $color3;
+}
+.js-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    justify-content: center;
+    transition: all .4s ease;
+    width:12%;
+    border-radius: 10px;
+    background: $color3;
+}
+.boots-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    width:80%;
+    border-radius: 10px;
+    background: $color3;
+}
+.sass-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:71%;
+    border-radius: 10px;
+    background: $color3;
+    transition: all .4s ease;
+}
+.git-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    width:68%;
+    border-radius: 10px;
+    background: $color3;
+}
+.seo-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60%;
+    border-radius: 10px;
+    transition: all .4s ease;
+    background: $color3;
 }
