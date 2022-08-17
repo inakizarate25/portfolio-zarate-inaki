@@ -12,19 +12,8 @@ header img {
   width: 100px;
 }
 
-.general-I {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4.8fr 1fr;
-  grid-template-areas: "header" "section" "footer";
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
-
 section {
-  display: grid;
-  place-items: center;
+  margin-top: 75px;
 }
 
 .presentacion {
@@ -46,6 +35,33 @@ section {
   color: #fff;
 }
 
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
 .presentacion__info--2 {
   color: #fff;
   font-size: 20px;
@@ -93,6 +109,12 @@ footer ul li a img {
   background-color: #000000;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .descripcion__video {
   height: 340px;
   width: 450px;
@@ -103,7 +125,7 @@ footer ul li a img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 70px;
+  margin-top: 70px;
 }
 
 .info__span1 {
@@ -112,11 +134,11 @@ footer ul li a img {
 }
 
 .info__span1--sobre {
-  font-size: 100px;
+  font-size: 60px;
 }
 
 .info__span1--mi {
-  font-size: 100px;
+  font-size: 60px;
   color: #00F0FF;
 }
 
@@ -166,11 +188,8 @@ footer ul li a img {
   }
 }
 .descripcion {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin: 40px;
-  width: 1000px;
+  width: 800px;
 }
 
 .descripcion__p {
@@ -200,19 +219,6 @@ footer ul li a img {
     width: 400px;
   }
 }
-.habilidades {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.habilidades p {
-  font-size: 60px;
-  color: #00F0FF;
-}
-
 #skills {
   width: 100%;
   height: auto;
@@ -227,10 +233,9 @@ footer ul li a img {
   justify-content: center;
   font-size: 45px;
   color: #00F0FF;
-  padding: 10px;
   padding-bottom: 30px;
   padding-top: 30px;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .skills-content {
@@ -249,7 +254,6 @@ footer ul li a img {
   color: #fff;
   font-weight: bold;
   display: inline-block;
-  padding: 1.5%;
 }
 
 @media screen and (max-width: 615px) {
@@ -258,7 +262,7 @@ footer ul li a img {
   }
 }
 .skill-text {
-  width: 80%;
+  width: 100%;
   position: relative;
   height: 50px;
 }

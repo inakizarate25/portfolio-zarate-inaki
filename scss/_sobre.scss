@@ -6,7 +6,11 @@ $color1: #000000;
 $color2:#fff;
 $color3: #00F0FF;
 
-
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .descripcion__video {
     height: 340px;
@@ -17,7 +21,7 @@ $color3: #00F0FF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 70px;
+    margin-top: 70px;
 }
 
 .info__span1 {
@@ -27,11 +31,11 @@ $color3: #00F0FF;
 }
 
 .info__span1--sobre {
-    font-size: 100px;
+    font-size: 60px;
 }
 
 .info__span1--mi {
-    font-size: 100px;
+    font-size: 60px;
     color: $color3;
 }
 
@@ -98,11 +102,8 @@ $color3: #00F0FF;
 
 
 .descripcion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin: 40px;
-    width: 1000px;
+    width: 800px;
 
 }
 
@@ -139,55 +140,9 @@ $color3: #00F0FF;
 
 
 
-.habilidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
 
-.habilidades p {
-    font-size: 60px;
-    color: $color3;
-}
 
-// .habilidades__div {
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: flex-start;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     gap: 50px;
-// }
-// .progreso {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     height: 80px;
-//     width: 360px;
-//     .titulo-progreso {
-//         font-size: 20px;
-//         color: $color2;
-//     }
-//     .barra {
-//         height: 60px;
-//         width: 360px;
-//         background-color: #161616;
-//         border-radius: 8px;
-//         p {
-//             color: $color1;
-//             font-size: 18px;
-//         }
-//     }
-// }
 
-// .html {
-//     height:40px ;
-//     width: 95%;
-//     background-color: $color3;
-//     border-radius: 8px;
-// }
 
 #skills{
     width: 100%;
@@ -202,10 +157,9 @@ $color3: #00F0FF;
     justify-content: center;
     font-size: 45px;
     color: $color3;
-    padding:10px;
     padding-bottom: 30px;
     padding-top: 30px;
-    font-weight: 900;
+    font-weight: bold;
 }
 .skills-content{
     height: auto;
@@ -222,7 +176,7 @@ $color3: #00F0FF;
     color: $color2;
     font-weight: bold;
     display: inline-block;
-    padding:1.5%;
+    
 }
 @media screen and (max-width:615px){
     .skill-html {
@@ -231,7 +185,7 @@ $color3: #00F0FF;
     
 }
 .skill-text{
-    width:80%;
+    width:100%;
     position: relative;
     height: 50px;
 }
