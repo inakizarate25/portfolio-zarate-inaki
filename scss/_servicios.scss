@@ -68,8 +68,14 @@ main {
     border-radius: 10px;
     overflow: hidden;
     animation: opacity 1.4s ease ;
+}
 
-
+@media screen and (max-width:480px){
+    .service{
+        height:290px;
+        width: 90%;
+    }
+    
 }
 .service-img{
     text-align: center;

@@ -128,3 +128,24 @@ $cards:(
     }
     
 }
+@media screen and (max-width:480px) {
+    .container__card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__card--img{
+        height: 230px;
+        width: 95%;
+    }
+    .container__card--div {
+        top: -50px;
+        left: auto;
+        height: 250px;
+        width: 80%;
+    }
+    .container__card--div p {
+        font-size: 13px;
+        text-align: center;
+    }
+    
+}

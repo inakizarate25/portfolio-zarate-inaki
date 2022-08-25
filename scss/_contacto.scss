@@ -6,7 +6,8 @@ $color3: #00F0FF;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 90px;
+   
    
 }
 @media screen and (max-width:768px) {
@@ -14,7 +15,15 @@ $color3: #00F0FF;
         flex-direction: column;
         align-items: center;
         margin-top: 190px;
+        
     }
+}
+@media screen and (max-width:480px) {
+    .sectionC{
+        margin-left: 30px;
+        
+    }
+    
 }
 
 @mixin flex-column-center {
@@ -64,8 +73,7 @@ $color3: #00F0FF;
         flex-direction: column;
     }
 }
-@media screen and (max-width:480px) {
-}
+
 .infoC {
     margin-bottom: 100px;
     @include flex-column-center;
@@ -104,23 +112,19 @@ img {
 }
 h2 {
     align-self: center;
-    font-size: 40px;
+    font-size: 25px;
     color: $color3;
     text-align: center;
 }
 @media screen and (max-width:768px) {
-    h2 {
-    font-size: 30px;
-    }
+    
     img {
         height: 30px;
         width: 30px;
     }
 }
 @media screen and (max-width:480px) {
-    h2 {
-        font-size: 20px;
-    }
+   
     img {
         height: 25px;
         width: 25px;
@@ -141,9 +145,7 @@ h2 {
     font-size: 30px ;
 }
 @media screen and (max-width:768px) {
-    h2 {
-    font-size: 30px;
-    }
+   
     img {
         height: 30px;
         width: 30px;

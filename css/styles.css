@@ -35,16 +35,25 @@ section {
   color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  .presentacion__id--nombre {
+    font-size: 45px;
+    color: #00F0FF;
+  }
+  .presentacion__id--apellido {
+    font-size: 45px;
+    color: #fff;
+  }
+}
 .typewriter p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
@@ -53,7 +62,6 @@ section {
     width: 100%;
   }
 }
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
@@ -212,11 +220,11 @@ section {
   .descripcion {
     flex-direction: column;
     margin: 10px;
-    width: 450px;
+    width: 90%;
   }
   .descripcion__video {
-    height: 250px;
-    width: 400px;
+    height: 220px;
+    width: 350px;
   }
 }
 #skills {
@@ -481,6 +489,26 @@ section {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .container__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__card--img {
+    height: 230px;
+    width: 95%;
+  }
+  .container__card--div {
+    top: -50px;
+    left: auto;
+    height: 250px;
+    width: 80%;
+  }
+  .container__card--div p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
 .sectionS {
   padding: 0;
   margin-top: 60px;
@@ -548,6 +576,12 @@ main {
   animation: opacity 1.4s ease;
 }
 
+@media screen and (max-width: 480px) {
+  .service {
+    height: 290px;
+    width: 90%;
+  }
+}
 .service-img {
   text-align: center;
 }
@@ -599,7 +633,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 768px) {
@@ -607,6 +641,11 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 190px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sectionC {
+    margin-left: 30px;
   }
 }
 .contacto {
@@ -692,24 +731,18 @@ img {
 
 h2 {
   align-self: center;
-  font-size: 40px;
+  font-size: 25px;
   color: #00F0FF;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 30px;
-  }
   img {
     height: 30px;
     width: 30px;
   }
 }
 @media screen and (max-width: 480px) {
-  h2 {
-    font-size: 20px;
-  }
   img {
     height: 25px;
     width: 25px;
@@ -731,9 +764,6 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 30px;
-  }
   img {
     height: 30px;
     width: 30px;
