@@ -31,25 +31,25 @@ section {
         .presentacion__id {
         display: flex;
         gap: 10px;
-            
-            .presentacion__id--nombre {
-                font-size: $titulo-lg;
-                color:#00F0FF ;
-            }
-            .presentacion__id--apellido {
-                font-size: $titulo-lg;
-                color: #fff ;
-            }
-    }
+                
+}
+.presentacion__id--nombre {
+    font-size: 45px;
+    color:#00F0FF ;
+}
+.presentacion__id--apellido {
+    font-size: 45px;
+    color: #fff ;
+}
 }
 @media screen and (max-width:480px) {
    
     .presentacion__id--nombre {
-        font-size: $titulo-md;
+        font-size: 45px;
         color:#00F0FF ;
     }
     .presentacion__id--apellido {
-        font-size: $titulo-md;
+        font-size: 45px;
         color: #fff ;
     }
 }

@@ -26,12 +26,12 @@ section {
   display: flex;
   gap: 10px;
 }
-.presentacion .presentacion__id .presentacion__id--nombre {
-  font-size: 60px;
+.presentacion .presentacion__id--nombre {
+  font-size: 45px;
   color: #00F0FF;
 }
-.presentacion .presentacion__id .presentacion__id--apellido {
-  font-size: 60px;
+.presentacion .presentacion__id--apellido {
+  font-size: 45px;
   color: #fff;
 }
 
