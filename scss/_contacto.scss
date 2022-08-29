@@ -18,13 +18,7 @@ $color3: #00F0FF;
         
     }
 }
-@media screen and (max-width:480px) {
-    .sectionC{
-        margin-left: 30px;
-        
-    }
-    
-}
+
 
 @mixin flex-column-center {
     display: flex;
@@ -66,7 +60,7 @@ $color3: #00F0FF;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 600px;
+  
 }
 @media screen and (max-width:768px) {
     .containerC {
@@ -78,7 +72,7 @@ $color3: #00F0FF;
     margin-bottom: 100px;
     @include flex-column-center;
     justify-content: space-evenly;
-    width: 500px;
+
     
 }
 @media screen and (max-width:768px) {
