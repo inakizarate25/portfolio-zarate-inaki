@@ -643,28 +643,28 @@ main {
     margin-top: 190px;
   }
 }
+.consulta {
+  color: #00F0FF;
+}
+
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
   margin-bottom: 60px;
 }
 
-.contacto__input {
+.contacto input {
   display: flex;
   flex-direction: column;
   margin: 18px;
   width: 245px;
 }
 
-.contacto__input label {
-  color: #00F0FF;
-}
-
-.contacto__text {
-  display: flex;
-  flex-direction: column;
-  margin: 18px;
+.textarea {
+  height: 100px;
+  width: 245px;
 }
 
 .contacto__text label {

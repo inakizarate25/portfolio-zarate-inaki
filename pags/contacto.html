@@ -44,29 +44,17 @@
     </header>
 
 <section class="sectionC">
-    <form class="contacto" action="../form.php" method="post">
+  <h1 class="consulta">Dejanos tu consulta</h1>
+  <form class="contacto" action="enviar.php" method="post">
+    <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+    <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+    <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+    <textarea name="message" class="textarea" placeholder="MENSAJE ... " id="message"></textarea>
 
-        <h2>Dejanos Tu Consulta</h2>
-        <div class="contacto__input">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        </div>  
-        
-        <!-- EMAIL -->
-        <div class="contacto__input">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </div>
+    <button type="submit" class="enviar">ENVIAR </button>
 
-        <!-- CONSULTA -->
-        <div class="contacto__text">
-            <label for="textarea">Mensaje</label>
-            <textarea name="textarea" id="textarea" placeholder="Dejanos Tu Consulta" cols="30" rows="10"></textarea>
-        </div>
-
-        <!-- BOTON ENVIAR -->
-        <input type="submit" value="ENVIAR" class="contacto__submit">
-    </form>
+</form>
+</div>
 
     <!-- informacion de contacto -->
     <div class="infoC ">

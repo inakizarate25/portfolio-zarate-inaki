@@ -26,27 +26,28 @@ $color3: #00F0FF;
     align-items: center;
 
 }
+.consulta {
+    color:$color3 ;
+}
 
 .contacto {
     @include flex-column-center;
+    gap: 12px;
     margin-bottom: 60px;
 }
-.contacto__input {
+.contacto input {
     display: flex;
     flex-direction: column;
     margin: 18px;
     width: 245px;
     
 }
-.contacto__input label {
-    color: $color3;
+.textarea {
+    height: 100px;
+    width: 245px;
 }
 
-.contacto__text {
-    display: flex;
-    flex-direction: column;
-    margin: 18px;
-}
+
 
 .contacto__text label {
     color: $color3;
