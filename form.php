@@ -15,8 +15,8 @@ $message .= "Su e-mail es: " . $email . " \r\n";
 $message .= "Mensaje: " . $_POST['textarea'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'escribeaquitucorreo@hotmail.com';
-$asunto = 'Mensaje de... (Escribe como quieres que se vea el remitente de tu correo)';
+$para = 'inakizarate.dev@gmail.com';
+$asunto = 'Mensaje de mi portfolio';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
