@@ -18,7 +18,7 @@ $message .= "Enviado el: " . date('d/m/Y', time());
 $para = 'escribeaquitucorreo@hotmail.com';
 $asunto = 'Mensaje de... (Escribe como quieres que se vea el remitente de tu correo)';
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($para, $asunto, utf8_decode($mensaje), $header);
 
 header("Location:index.html");
 ?>
