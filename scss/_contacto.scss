@@ -35,11 +35,15 @@ $color3: #00F0FF;
     gap: 12px;
     margin-bottom: 60px;
 }
-.contacto input {
+.contacto .input {
     display: flex;
     flex-direction: column;
     margin: 18px;
-    width: 245px;
+    width: 280px;
+    border-radius: 5px;
+    color: $color2;
+    background-color: $color1;
+    border: 3px solid $color3;
     
 }
 .textarea {
@@ -54,7 +58,12 @@ $color3: #00F0FF;
 }
 
 .contacto__submit {
-    width: 100px;
+    width: 115px;
+    border-radius: 5px;
+    color: $color3;
+    background-color: $color1;
+    border: 3px solid $color3;
+   
 }
 
 .containerC {

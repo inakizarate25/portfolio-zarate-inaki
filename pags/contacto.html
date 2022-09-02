@@ -19,6 +19,13 @@
     <link rel="shortcut icon" href="../imagenes/logo-iña.png" type="image/x-icon">
     <title>Contacto</title>
     
+    <!-- script forms -->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('VUn7__VIF9vDyQm8D')
+</script>
 </head>
 <body>
     <div class="generalC">
@@ -45,15 +52,32 @@
 
 <section class="sectionC">
   <h1 class="consulta">Dejanos tu consulta</h1>
-  <form class="contacto" action="https://formsubmit.co/inakizarate.dev@gmail.com" method="POST">
-    <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
-    <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
-    <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
-    <textarea name="message" class="textarea" placeholder="MENSAJE ... " id="message"></textarea>
+  <form id="form" class="contacto">
+    <div class="field">
+      <label for="from_name">Nombre</label>
+      <input type="text" name="from_name" id="from_name" class="input">
+    </div>
+    <div class="field">
+      <label for="reply_to">Telefono</label>
+      <input type="text" name="reply_to" id="reply_to" class="input">
+    </div>
+    <div class="field">
+      <label for="user_email">Email</label>
+      <input type="text" name="user_email" id="user_email" class="input">
+    </div>
+    <div class="field">
+      <label for="message">Dejanos tu memsaje</label>
+      <input type="text" name="message" class="textarea input" id="message">
+    </div>
+   
+   
+  
+  <div class="">
+    <input type="submit" id="button" class="contacto__submit" value="Enviar" >
+    <input type="reset" class="contacto__submit" value="Borrar">
+  </div>
 
-    <button type="submit" class="enviar">ENVIAR </button>
-
-</form>
+  </form>
 </div>
 
     <!-- informacion de contacto -->
@@ -131,5 +155,8 @@
 
 <!-- bootstrap -->
 <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+<!-- forms -->
+<script src="../js/forms.js"></script>
 </body>
 </html>

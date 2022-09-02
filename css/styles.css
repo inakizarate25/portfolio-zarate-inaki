@@ -655,11 +655,15 @@ main {
   margin-bottom: 60px;
 }
 
-.contacto input {
+.contacto .input {
   display: flex;
   flex-direction: column;
   margin: 18px;
-  width: 245px;
+  width: 280px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000000;
+  border: 3px solid #00F0FF;
 }
 
 .textarea {
@@ -672,7 +676,11 @@ main {
 }
 
 .contacto__submit {
-  width: 100px;
+  width: 115px;
+  border-radius: 5px;
+  color: #00F0FF;
+  background-color: #000000;
+  border: 3px solid #00F0FF;
 }
 
 .containerC {
@@ -771,6 +779,40 @@ h2 {
 #footerC {
   display: flex;
   justify-content: space-around;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.section-enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.section-enviar img {
+  width: 100px;
+  height: 50px;
+}
+
+.section-enviar p {
+  color: #00F0FF;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 480) {
+  p {
+    color: #00F0FF;
+    font-size: 19px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
